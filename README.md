@@ -14,6 +14,9 @@
 ## linux运维
 1. [linux硬盘管理之分区格式化挂载](linux硬盘管理之分区格式化挂载.md)
 
+## 代码调试
+[gdb调试与core-dump](gdb调试与core-dump.md)
+
 
 ## 个人笔记仓库汇总：
 1. gitee
