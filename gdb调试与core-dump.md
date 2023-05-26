@@ -71,3 +71,10 @@ document bbrestore
 end
 ```
 
+```
+#!/bin/sh
+echo "set args 1" > ~/.gdbinit
+export LD_LIBRARY_PATH=../
+gdb ./a.out
+```
+
