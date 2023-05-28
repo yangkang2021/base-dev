@@ -4,9 +4,9 @@
 
 ## linux coredump
 1. 取消coredump文件大小限制：ulimit -c unlimited
-2. 设置和查看coredrump文件存储位置：sudo sysctl -w kernel.core_pattern=/home/eswin/Desktop/core-%e-%s-%u-%g-%p-%t  && cat /proc/sys/kernel/core_pattern
+2. 设置和查看coredrump文件存储位置：sudo sysctl -w kernel.core_pattern=~/Desktop/core-%e-%s-%u-%g-%p-%t  && cat /proc/sys/kernel/core_pattern
 3. 运行程序并等待崩溃。
-4. gdb分享coredump：gdb buKaInteractionClient /home/eswin/Desktop/core-buKaInteraction-11-1000-1000-11247-1658827857
+4. gdb分享coredump：gdb buKaInteractionClient ~/Desktop/core-buKaInteraction-11-1000-1000-11247-1658827857
 
 coredump信息
 - %p：进程ID。
