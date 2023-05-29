@@ -10,6 +10,7 @@
 5. [golang开发记录](golang.md)
 5. [go语言四剑客](go语言四剑客.md)
 6. [etcd与分布式和微服务](etcd.md)
+7. [web跨域解决方案](web跨域解决方案.md)
 
 ## linux运维
 1. [linux硬盘管理之分区格式化挂载](linux硬盘管理之分区格式化挂载.md)
@@ -17,6 +18,7 @@
 ## 代码调试
 [gdb调试与core-dump](gdb调试与core-dump.md)
 [vim的使用](vim.md)
+
 
 ## 个人笔记仓库汇总：
 1. gitee
