@@ -11,7 +11,7 @@
 5. [go语言四剑客](go语言四剑客.md)
 6. [etcd与分布式和微服务](etcd.md)
 7. [web跨域解决方案](web跨域解决方案.md)
-
+8. [web页面调起桌面exe(ffplay)](web页面调起桌面exe(ffplay).md)
 ## linux运维
 1. [linux硬盘管理之分区格式化挂载](linux硬盘管理之分区格式化挂载.md)
 
