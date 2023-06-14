@@ -91,4 +91,13 @@
 
 ### 7. 技术细节
  - 关于context：https://blog.csdn.net/weixin_45994575/article/details/123314937
+
+## 相关技术
+1. go的优雅退出：https://blog.51cto.com/u_15912066/5935951
+2. pprof：go tool pprof -http=:9999 cpu.pprof
+   - https://blog.csdn.net/winfield821/article/details/104186306
+   - https://blog.csdn.net/K346K346/article/details/104370334
+
+
+
  
