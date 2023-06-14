@@ -28,13 +28,11 @@
     tar -zxvf go1.17.3.linux-amd64.tar.gz
    
     mv  go /usr/local/
+
+    echo "export GOROOT=/usr/local/go" >>~/.bash_profile
+    echo "export PATH=$PATH:$GOROOT/bin" >>~/.bash_profile
    
-    vim /etc/profile
-    # 在最后一行添加
-    export GOROOT=/usr/local/go
-    export PATH=$PATH:$GOROOT/bin
-    # 保存退出后source一下（vim 的使用方法可以自己搜索一下）
-    source /etc/profile
+    source ~/.bash_profile
     ```
 ### 3. 基本知识
 1. 新版不在需要手动配置GOPATH, 默认在用户目录下。
