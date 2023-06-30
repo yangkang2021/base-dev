@@ -14,6 +14,7 @@
 8. [web页面调起桌面exe(ffplay)](web页面调起桌面exe(ffplay).md)
 ## linux运维
 1. [linux硬盘管理之分区格式化挂载](linux硬盘管理之分区格式化挂载.md)
+1. [linux硬盘读写测速](linux硬盘读写测速.md)
 
 ## 代码调试
 [gdb调试与core-dump](gdb调试与core-dump.md)

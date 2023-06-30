@@ -29,9 +29,10 @@
    
     mv  go /usr/local/
 
-    echo "export GOROOT=/usr/local/go" >>~/.bash_profile
-    echo "export PATH=$PATH:$GOROOT/bin" >>~/.bash_profile
+    echo 'export GOROOT=/usr/local/go' >>~/.bash_profile
+    source ~/.bash_profile
    
+    echo 'export PATH=$PATH:$GOROOT/bin' >>~/.bash_profile
     source ~/.bash_profile
     ```
 ### 3. 基本知识
