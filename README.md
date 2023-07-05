@@ -19,7 +19,7 @@
 ## 代码调试
 [gdb调试与core-dump](gdb调试与core-dump.md)
 [vim的使用](vim.md)
-
+[GLIBCXX_3.4.26-not-found问题](GLIBCXX_3.4.26-not-found问题.md)
 
 ## 个人笔记仓库汇总：
 1. gitee

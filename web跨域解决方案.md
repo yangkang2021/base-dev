@@ -14,4 +14,41 @@
 6. Websocket
 https://blog.csdn.net/m0_37873510/article/details/126558023
 
+## 三. iris跨域解决
+>处理Options请求和返回Access-Control-Allow-Origin
+```
+1. 编写中间件，将允许跨域的header添加到响应头
+//Cors
+funcCors(ctxiris.Context){
+    ctx.Header("Access-Control-Allow-Origin","*")
+    //ctx.Header("Access-Control-Allow-Headers","DNT,X-Mx-ReqToken,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization")
+    //ctx.Header("Access-Control-Allow-Methods","GET,POST,OPTIONS,HEAD,DELETE")
+    ifctx.Method()=="OPTIONS"{
+        ctx.Header("Access-Control-Allow-Methods","GET,POST,PUT,DELETE,PATCH,OPTIONS")
+        ctx.Header("Access-Control-Allow-Headers","Content-Type,Accept,Authorization")
+        ctx.StatusCode(204)
+        return
+    }
+    ctx.Next()
+}
+
+func main(){
+    app:=iris.New()
+    app.Use(recover.New())
+    // 所有请求前面添加拦截器
+    app.Use(Cors)
+     // 如果API接口没有实现OPTIONS方法，需要给所有接口设置缺省的OPTIONS方法，不然捕捉不到对应API接口的OPTIONS请求。
+    common:=app.Party("/")
+    {
+        common.Options("*",func(ctxiris.Context){
+            ctx.Next()
+        })
+    }
+
+    api:=app.Party("/api")
+    api.Get("/index",IndexHandler)
+    app.Run(iris.Addr("0.0.0.0:8080"))
+}
+```
+
 
