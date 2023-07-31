@@ -34,6 +34,8 @@
    
     echo 'export PATH=$PATH:$GOROOT/bin' >>~/.bash_profile
     source ~/.bash_profile
+   
+    go env -w GOPROXY=https://goproxy.cn,direct
     ```
 ### 3. 基本知识
 1. 新版不在需要手动配置GOPATH, 默认在用户目录下。
