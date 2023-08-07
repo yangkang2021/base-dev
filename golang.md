@@ -28,7 +28,9 @@
     tar -zxvf go1.17.3.linux-amd64.tar.gz
    
     mv  go /usr/local/
-
+   
+    rm go1.17.3.linux-amd64.tar.gz
+   
     echo 'export GOROOT=/usr/local/go' >>~/.bash_profile
     source ~/.bash_profile
    
