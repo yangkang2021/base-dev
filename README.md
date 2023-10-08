@@ -1,5 +1,8 @@
 # 基础开发笔记
 
+## C++
+1. [c++的shared_ptr和shared_from_this为什么共享引用计数](c++的shared_ptr和shared_from_this为什么共享引用计数.md)
+
 ## 笔记列表
 1. [openssl开发详解](openssl.md)
 2. [docker学习要点](docker.md)
