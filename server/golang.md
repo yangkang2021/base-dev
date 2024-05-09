@@ -38,6 +38,10 @@
     source ~/.bash_profile
    
     go env -w GOPROXY=https://goproxy.cn,direct
+    
+    go clean -modcache
+   
+    https://www.cnblogs.com/hi3254014978/p/17738306.html
     ```
 ### 3. 基本知识
 1. 新版不在需要手动配置GOPATH, 默认在用户目录下。
@@ -45,7 +49,7 @@
 3. 配置go代理：go env -w GOPROXY=https://goproxy.cn,direct
 
 ### 4. 仓库-模块-目录/包-文件-变量-函数
-![](.golang_images/go_tree.jpeg)
+![](.images/go_tree.jpeg)
 1. 模块是 go 包的集合。
 2. 包是 .go 文件的目录。
     - 一系列go文件的集合。

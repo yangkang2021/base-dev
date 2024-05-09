@@ -32,7 +32,7 @@
 4. 自建以上三种。
 
 
-![](.etcd_images/etcd.jpeg)
+![](.images/etcd.jpeg)
 
 简单聊聊服务发现（redis,zk,etcd,consul）https://www.cnblogs.com/sunsky303/p/11126400.html
 
@@ -41,6 +41,6 @@ etcd：`高可用、强一致性的小型kv数据存储服务。`
 
 etcd作用：**共享配置，服务发现，集群监控，leader选举，分布式锁等场景。**
 
-![](.etcd_images/etcd2.jpeg)
-![](.etcd_images/be897619.png)
+![](.images/etcd2.jpeg)
+![](.images/be897619.png)
 

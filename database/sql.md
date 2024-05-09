@@ -46,8 +46,8 @@ mysql> SELECT * FROM msg WHERE type REGEXP 'TX|RX|TR' AND (SELECT COUNT(DISTINCT
 6 rows in set (0.00 sec)
 ```
 ### 三. MySQL执行过程及执行顺序
-![](.sql_images/0198a0ab.png)
-![](.sql_images/06ffe48f.png)
+![](.images/0198a0ab.png)
+![](.images/06ffe48f.png)
 
 针对MySQL，其条件执行顺序是 从左往右，自上而下。
 
