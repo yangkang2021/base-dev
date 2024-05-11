@@ -1,9 +1,11 @@
 # 基础开发笔记
 
 ## 一. 基本基础
-1. [openssl开发详解](base/openssl.md)
+1. [cmake](cmake/README.md)
+2. [openssl开发详解](base/openssl.md)
 1. [c++的shared_ptr和shared_from_this为什么共享引用计数](c++/c++的shared_ptr和shared_from_this为什么共享引用计数.md)
 1. [https与证书.md](base/https与证书.md)
+2. [文档生成工具.md](base/文档生成工具.md)
 
 ## 二. 数据库
 1. [sql学习](database/sql.md)
@@ -28,6 +30,8 @@
 1. [gdb调试与core-dump](linux/gdb调试与core-dump.md)
 2. [vim的使用](linux/vim.md)
 3. [GLIBCXX_3.4.26-not-found问题](linux/GLIBCXX_3.4.26-not-found问题.md)
+4. [防火墙管理.md](linux/防火墙管理.md)
+5. [WSL-windows子系统.md](linux/WSL-windows子系统.md)
 
 ## 六. UDP可靠传输
 1. [KCP](udp/kcp.md)

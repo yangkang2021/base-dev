@@ -1,22 +1,23 @@
 # [gdb调试与coredump.md](gdb%B5%F7%CA%D4%D3%EBcoredump.md)
 
 
-
 ## linux coredump
 1. 取消coredump文件大小限制：ulimit -c unlimited
-2. 设置和查看coredrump文件存储位置：sudo sysctl -w kernel.core_pattern=~/Desktop/core-%e-%s-%u-%g-%p-%t  && cat /proc/sys/kernel/core_pattern
+2. 设置coredrump文件存储位置：sudo sysctl -w kernel.core_pattern=~/Desktop/core-%e-%s-%u-%g-%p-%t 
+3. 查看coredrump文件存储位置：cat /proc/sys/kernel/core_pattern
+4. 用绝对路径试试
 3. 运行程序并等待崩溃。
-4. gdb分享coredump：gdb buKaInteractionClient ~/Desktop/core-buKaInteraction-11-1000-1000-11247-1658827857
+4. gdb分析coredump：gdb buKaInteractionClient ~/Desktop/core-buKaInteraction-11-1000-1000-11247-1658827857
+5. coredump信息
+   - %p：进程ID。
+   - %u：用户ID。
+   - %g：用户所属组ID。
+   - %s：导致dump的信号的数字。
+   - %t：dump的时间。
+   - %e：执行文件的名称。
+   - %h：主机名
 
-coredump信息
-- %p：进程ID。
-- %u：用户ID。
-- %g：用户所属组ID。
-- %s：导致dump的信号的数字。
-- %t：dump的时间。
-- %e：执行文件的名称。
-- %h：主机名
-
+---
 ## gdb操作
 堆栈操作：
 ```
