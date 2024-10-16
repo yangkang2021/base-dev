@@ -9,6 +9,8 @@
 ## conan
 - https://conan.io/
 
+##  xmake
+
 ## CPM
 - 就提供一个CPM.cmake
 - 实现从github，http，git仓库等代码库添加依赖

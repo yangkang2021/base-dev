@@ -21,6 +21,10 @@
     - https://zhuanlan.zhihu.com/p/664780958
     - https://github.com/mishamosher/CentOS-WSL 
     - yum install make automake gcc gcc-c++ cmake gdb
+5. 卸载
+    - wsl --list --verbose
+    - wsl --terminate CentOS7
+    - wsl --unregister CentOS7
 ## 三：windows安装docker
 1. 方式1(使用此方式)：
    - https://learn.microsoft.com/zh-cn/windows/wsl/tutorials/wsl-containers

@@ -1,5 +1,6 @@
 # 01-cmake-概述
 
+## 目录
 <!-- TOC -->
 * [01-cmake-概述](#01-cmake-概述)
   * [一. 基本概念](#一-基本概念)
@@ -24,3 +25,5 @@
 ##  四. 参考资料 课程与数据
 1. 《CMake构建实战：项目开发卷》https://box.lenovo.com/l/s1RnFo
 2.  CMake构建大型c++项目
+3. Modern CMake for C++
+4. CMake-Best-Practices

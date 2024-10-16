@@ -43,6 +43,8 @@
    
     https://www.cnblogs.com/hi3254014978/p/17738306.html
     ```
+3. 交叉编译
+   https://www.jb51.net/jiaoben/295048ilu.htm
 ### 3. 基本知识
 1. 新版不在需要手动配置GOPATH, 默认在用户目录下。
 2. 采用mod管理项目。依赖库默认下载到GOPATH的pkg目录。
